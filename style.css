@@ -1,0 +1,40 @@
+
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background:#000;
+}
+.fly{
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+.fly li{
+    display: inline-block;
+    opacity: 1;
+    transition: all 4s ease;
+    color: #fff;
+    margin-right: 15px;
+    font-family: open sans, arial;
+    font-weight: 200;
+    font-size: 7em;
+}
+.fly.hidden li{
+    opacity: 0;
+}
+.fly.hidden li:nth-child(1){transform: translateX(-200px) translateY(-200px);}
+.fly.hidden li:nth-child(2){transform: translateX(-20px) translateY(-100px);}
+.fly.hidden li:nth-child(3){transform: translateX(200px) translateY(200px);}
+.fly.hidden li:nth-child(4){transform: translateX(-200px) translateY(-30px);}
+.fly.hidden li:nth-child(6){transform: translateX(-110px) translateY(300px);}
+.fly.hidden li:nth-child(7){transform: translateX(-20px) translateY(-150px);}
+.fly.hidden li:nth-child(8){transform: translateX(-200px) translateY(100px);}
+.fly.hidden li:nth-child(9){transform: translateX(-20px) translateY(-200px);}
+.fly.hidden li:nth-child(10){transform: translateX(-100px) translateY(-10px);}
+.fly.hidden li:nth-child(11){transform: translateX(-300px) translateY(-20px);}
+
